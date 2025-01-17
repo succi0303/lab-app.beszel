@@ -20,6 +20,7 @@ services:
     environment:
       PORT: 45876
       # Do not remove quotes around the key
-      KEY: 'UPDATE WITH YOUR PUBLIC KEY (copy from "Add system" dialog)'
+      KEY: ${BESZEL_AGENT_KEY}
+    env_file: stack.env
 volumes:
   data:
