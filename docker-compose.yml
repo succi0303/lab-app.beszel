@@ -7,6 +7,7 @@ services:
       - host.docker.internal:host-gateway
     ports:
       - 8090:8090
+    network_mode: host
     volumes:
       - data:/beszel_data
 volumes:
